@@ -1,8 +1,7 @@
 import { openai } from "@ai-sdk/openai";
 import { Agent } from "@mastra/core/agent";
-import { getBalancesTool, evmDepositTool, crossChainSwapTool } from "../tools";
+import { getBalancesTool, evmDepositTool, crossChainSwapTool, getPoolsTool } from "../tools";
 import { Memory } from "@mastra/memory";
-import { getPoolsTool } from "../tools/getPools";
 
 export const blockchainAgent = new Agent({
   name: "Blockchain Agent",
