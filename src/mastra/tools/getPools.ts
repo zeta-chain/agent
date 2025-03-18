@@ -8,7 +8,7 @@ export const getPoolsTool = createTool({
     "Get liquidity pool information on ZetaChain. Format output in a table.",
   inputSchema: z.object({}),
   outputSchema: z.object({}),
-  execute: async ({ context }) => {
+  execute: async () => {
     return await getPools();
   },
 });
